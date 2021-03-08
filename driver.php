@@ -13,7 +13,7 @@ require_once('CommandLineDisplay.php');
 require_once('ContactController.php');
 
 $data = new SenateData();
-$display = new CommandLineDisplay("Senators", $argv);
+$display = new CommandLineDisplay("Senators:");
 
 $cc = new ContactController($display, $data);
 ?>

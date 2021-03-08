@@ -9,11 +9,9 @@ require_once('Display.php');
 
 class CommandLineDisplay implements Display {
     private $name = null;
-    private $argv = null;
 
-    public function __construct(String $name, $argv) {
+    public function __construct(String $name) {
         $this->name = $name;
-        $this->argv = $argv;
     }
 
     /**
@@ -29,5 +27,4 @@ class CommandLineDisplay implements Display {
             print("No Entries Found!!!\n");
         }
     }
-   
 }
